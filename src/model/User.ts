@@ -66,5 +66,7 @@ const UserModel =
   (mongoose.models.User as mongoose.Model<User>) ||
   mongoose.model<User>("user", UserSchema);
 
+export default UserModel;
+
 // why we exported the models differently in Next.js ?
 // We have to double check whether our data already there exported or it need to be exported?
